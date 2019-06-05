@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:control="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="Proyecto.Views.Asignaturas"
+             Title="Asignaturas">
+
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[  
+            ^contentpage {  
+                background-color: #F2F2F2;  
+            }  
+            #Asignatura{
+                font-size: Large;
+            }
+         
+            
+            #Info {
+                margin: 0,0,0,2;
+            }
+            label{
+                color: #000000;
+                font-size: medium;
+            }
+            frame{
+            
+            }
+            
+            ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <ListView ItemsSource="{Binding ListaAsignaturas}"
+                  HasUnevenRows="True"
+                  SeparatorVisibility="None"
+                  ItemTapped="OnItemSelect">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                            <StackLayout BackgroundColor="White">
+                                <Frame OutlineColor="Black" Padding="7" BackgroundColor="#F2CB05" Margin="0,1,0,0">
+                                <Label x:Name="Asignatura"  Text="{Binding nombre}"></Label>
+                                </Frame>
+                                <StackLayout x:Name="Info" BackgroundColor="White">
+                                    <Label Text="{Binding nota}" ></Label>
+                                    <Label Text="{Binding inasistencia}" ></Label>
+                            </StackLayout>
+                            </StackLayout>
+                        
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto.Views.Biblioteca"
+             Title="Biblioteca">
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[  
+            ^contentpage {  
+                background-color: #F2F2F2;  
+            }  
+            stacklayout {
+                margin: 0.5;
+                background-color: #FFFFFF;
+            }
+            label{
+                color: #000000;
+                text-size: 20;
+            }           ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+
+                <Label Text="Hush-Hush"  ></Label>
+                <Label Text="Becca FitzPatrik"  ></Label>
+                <Label Text="Fecha de prestamo : 10-04-2019" ></Label>
+                <Label Text="Fecha máxima de devolución: 12-04-2019" ></Label>
+                <Label Text="Multa: $20.000" ></Label>
+            </StackLayout>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

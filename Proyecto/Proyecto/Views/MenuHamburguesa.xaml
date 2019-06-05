@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto.Views.MenuHamburguesa">
+    <MasterDetailPage.Resources>
+        <StyleSheet>
+            <![CDATA[  
+            ^contentpage {  
+                background-color: #F2F2F2;  
+            }  
+            #ListMenu{
+                color: #000000;
+                background-color: #FFFFFF;
+            }
+            
+            #id{
+                color: #033E8C;
+            }
+            
+            #logoM{
+                width: 100;
+                
+            } 
+            ]]>
+        </StyleSheet>
+    </MasterDetailPage.Resources>
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title ="Menú"
+            Icon="">
+            <StackLayout Orientation="Vertical">
+                <StackLayout BackgroundColor="#F2CB05"
+                     HeightRequest="150">
+                    <Image x:Name="logoM" Source="logo.png"></Image>
+                    <Label x:Name="id" Text="ID: 8919722"></Label>
+                </StackLayout>
+                <ListView x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding MenuTitle}" ImageSource="{Binding Icon}"></ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

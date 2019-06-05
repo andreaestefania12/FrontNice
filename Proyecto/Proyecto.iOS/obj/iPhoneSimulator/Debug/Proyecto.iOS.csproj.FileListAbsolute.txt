@@ -1,0 +1,8 @@
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\Proyecto.iOS.csprojAssemblyReference.cache
+C:\Users\Asus-PC\source\repos\Proyecto\Proyecto\Proyecto.iOS\obj\iPhoneSimulator\Debug\Proyecto.iOS.csproj.CoreCompileInputs.cache

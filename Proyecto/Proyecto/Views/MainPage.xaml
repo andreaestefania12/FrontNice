@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto.MainPage"
+             Title="Pontificia Universidad Javeriana "   >
+
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[  
+            ^contentpage {  
+                background-color: #F2F2F2;  
+            }  
+            stacklayout {
+                margin: 30;
+            }
+            #logo{
+                width: 500;
+            }
+            
+            #boxUsuario,#boxContraseña{
+            color: #033E8C;}
+            
+            #btnLogin{
+                color: #033E8C;
+                background-color: #F2CB05;
+          
+           }
+            
+            ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+    
+
+    <StackLayout>
+        <Image x:Name="logo" Source="logo.png"></Image>
+        <Entry x:Name="boxUsuario" Placeholder="Usuario"></Entry>
+        <Entry x:Name="boxContraseña" Placeholder="Contraseña" IsPassword="true"></Entry>
+        <Button Text="Ingresar" x:Name="btnLogin" Clicked="LoginCommand"></Button>
+    </StackLayout>
+
+</ContentPage>
